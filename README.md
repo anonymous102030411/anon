@@ -64,3 +64,24 @@ Part 2
 | GAP (Last Layer)| ✗/✓✓                     | 93.2±0.2      | 90.2±0.3    | -            | 74.3±0.2   | -          | -          |
 | GAP (All Layer) | ✗/✓✓                     | 93.8±0.1      | 90.2±0.3    | -            | 77.8±0.6   | -          | -          |
 | ERM* + DPE (ours) | ✗/✓✓                   | 94.1±0.4      | 90.3±0.7    | 70.8±0.8     | 75.3±0.5   | 91.7±1.3   | 76.0±0.3   |
+
+## Results on Additional BREEDS Datasets
+
+### Table 4 - Results on the Source Domain
+
+| Algorithm   | ImageNet Pre-training | Living-17 WGA | Living-17 Mean Accuracy | Non-living-26 WGA | Non-living-26 Mean Accuracy | Entity-30 WGA | Entity-30 Mean Accuracy |
+|------------|----------------------|--------------|--------------------|----------------|--------------------|--------------|--------------------|
+| ERM        | ✓                    | -            | -                  | 87.7±0.8       | 95.8±0.1           | 84.3±0.1     | 96.1±0.0           |
+| ERM + DPE  | -                    | -            | -                  | 89.0±1.0       | 95.5±0.2           | 86.4±0.3     | 96.0±0.0           |
+
+---
+
+### Table 5 - Results on the Target Domain
+
+| Algorithm   | ImageNet Pre-training | Living-17 WGA | Living-17 Mean Accuracy | Non-living-26 WGA | Non-living-26 Mean Accuracy | Entity-30 WGA | Entity-30 Mean Accuracy |
+|------------|----------------------|--------------|--------------------|----------------|--------------------|--------------|--------------------|
+| ERM        | ✗                    | 6.7±1.5      | 27.8±0.6           | 5.0±1.0        | 23.9±0.6           | 5.8±1.5      | 24.8±1.0           |
+| ERM + DPE  | ✗                    | 9.0±1.0      | 30.2±1.5           | 8.0±1.0        | 24.7±0.6           | 8.8±0.2      | 29.6±0.0           |
+| ERM        | ✓                    | 48.0±1.5     | 87.4±0.5           | 1.7±0.0        | 62.0±0.4           | 19.2±2.0     | 68.7±0.5           |
+| ERM + DPE  | ✓                    | 54.0±4.0     | 87.4±0.3           | 7.7±0.0        | 61.5±0.4           | 28.8±1.5     | 70.1±0.3           |
+
