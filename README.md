@@ -137,7 +137,7 @@ Part 2
 
 ---
 
-## Sensitivity Analysis to the IPS Loss Coefficient
+### Sensitivity Analysis to the IPS Loss Coefficient
 
 ### Table 9 - Worst Group Accuracy
 
