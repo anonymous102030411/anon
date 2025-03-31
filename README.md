@@ -85,3 +85,74 @@ Part 2
 | ERM        | ✓                    | 48.0±1.5     | 87.4±0.5           | 1.7±0.0        | 62.0±0.4           | 19.2±2.0     | 68.7±0.5           |
 | ERM + DPE  | ✓                    | 54.0±4.0     | 87.4±0.3           | 7.7±0.0        | 61.5±0.4           | 28.8±1.5     | 70.1±0.3           |
 
+## Standard Accuracy Results
+
+### Table 6 - Standard Accuracy for All Methods
+
+### Group Info Legend:
+- **✗/✗**: No group information required
+- **✗/✓**: Group information required for hyperparameter tuning
+- **✗/✓✓**: Validation data required for training and hyperparameter tuning
+- **✓/✓**: Full group information required
+
+### Performance Results
+
+| Algorithm        | Group Info (Train / Val) | WATERBIRDS  | CELEBA      | CIVILCOMMENTS | MULTINLI    | METASHIFT   | CHEXPERT    |
+|-----------------|------------------------|-------------|------------|--------------|------------|------------|------------|
+| ERM            | ✗/✗                      | 84.1±1.7    | 95.0±0.1   | 85.4±0.2     | 80.9±0.3   | 91.5±0.2   | 88.6±0.7   |
+| CRT            | ✗/✓                      | 89.2±0.1    | 94.1±0.1   | 83.0±0.0     | 80.2±0.0   | 91.5±0.0   | 79.1±0.1   |
+| ReWeightCRT    | ✗/✓                      | 89.4±0.3    | 94.2±0.1   | 83.4±0.0     | 80.2±0.0   | 91.3±0.1   | 79.0±0.0   |
+| DFR            | ✗/✓✓                     | 92.2±0.2    | 91.2±0.1   | 81.3±0.0     | 80.2±0.0   | 90.5±0.4   | 78.9±0.2   |
+| ERM + DPE      | ✗/✓✓                     | 92.5±0.2    | 89.8±0.2   | 82.2±0.2     | 81.3±0.2   | 91.2±0.1   | -          |
+| ERM*           | ✗/✗                      | 92.1±0.2    | 94.0±0.2   | 83.3±1.4     | 81.9±0.2   | 93.2±0.1   | 79.4±0.3   |
+| Group DRO      | ✓/✓                      | 93.5        | 92.9       | 88.9         | 81.4       | -          | -          |
+| RWG            | ✓/✓                      | -           | -          | -            | -          | -          | -          |
+| JTT            | ✗/✓                      | 93.3        | 88.0       | 91.1         | 78.6       | -          | -          |
+| CnC            | ✗/✓                      | 90.9±0.1    | 89.9±0.5   | 81.7±0.5     | -          | -          | -          |
+| SSA            | ✗/✓✓                     | 92.2±0.9    | 92.8±0.1   | 88.2±2.0     | 79.9±0.87  | -          | -          |
+| DFR            | ✗/✓✓                     | 94.2±0.4    | 91.3±0.3   | 87.2±0.3     | 82.1±0.2   | -          | -          |
+| GAP (Last Layer) | ✗/✓✓                   | 94.6±0.2    | 91.7±0.2   | -            | 81.9±0.0   | -          | -          |
+| GAP (All Layer)  | ✗/✓✓                   | 95.6±0.1    | 91.5±0.1   | -            | 82.5±0.1   | -          | -          |
+| ERM* + DPE     | ✗/✓✓                     | 96.0±0.1    | 91.9±0.3   | 81.6±0.2     | 81.6±0.2   | 93.8±0.5   | 79.0±0.2   |
+
+## Hyperparameter Tuning and Sensitivity
+
+### Sensitivity Analysis to the Entropic Scale (i.e, inverse temperature, 1/τ)
+
+### Table 7 - Worst Group Accuracy
+
+| Dataset    | Inverse Temperature (1/τ) | 10    | 20    | 30    | 40    | Mean  | STD  |
+|------------|--------------------------|-------|-------|-------|-------|-------|------|
+| Waterbirds |                           | 93.6  | 93.9  | 94.1  | 94.5  | 94.03 | 0.38 |
+| MetaShift  |                           | 89.7  | 91.7  | 90.8  | 91.3  | 90.88 | 0.87 |
+| Living17   |                           | 63.0  | 58.7  | 57.3  | 55.3  | 58.58 | 3.26 |
+
+### Table 8 - Accuracy
+
+| Dataset    | Inverse Temperature (1/τ) | 10    | 20    | 30    | 40    | Mean  | STD  |
+|------------|--------------------------|-------|-------|-------|-------|-------|------|
+| Waterbirds |                           | 96.4  | 96.2  | 96.0  | 95.9  | 96.13 | 0.22 |
+| MetaShift  |                           | 93.8  | 93.7  | 93.9  | 93.9  | 93.83 | 0.10 |
+| Living17   |                           | 87.0  | 87.2  | 87.1  | 86.9  | 87.05 | 0.13 |
+
+---
+
+## Sensitivity Analysis to the IPS Loss Coefficient
+
+### Table 9 - Worst Group Accuracy
+
+| Dataset    | IPS Loss Coefficient | 1e4   | 5e4   | 1e5   | 5e5   | Mean  | STD  |
+|------------|----------------------|-------|-------|-------|-------|-------|------|
+| Waterbirds |                      | 93.6  | 94.4  | 94.1  | 94.1  | 94.05 | 0.33 |
+| MetaShift  |                      | 90.5  | 91.7  | 90.7  | 90.8  | 90.93 | 0.53 |
+| Living17   |                      | 63.0  | 61.7  | 61.7  | 62.0  | 62.10 | 0.62 |
+
+### Table 10 - Accuracy
+
+| Dataset    | IPS Loss Coefficient | 1e4   | 5e4   | 1e5   | 5e5   | Mean  | STD  |
+|------------|----------------------|-------|-------|-------|-------|-------|------|
+| Waterbirds |                      | 96.3  | 95.9  | 96.0  | 95.9  | 96.03 | 0.19 |
+| MetaShift  |                      | 93.9  | 93.9  | 93.7  | 93.7  | 93.80 | 0.12 |
+| Living17   |                      | 87.2  | 87.0  | 87.0  | 87.1  | 87.08 | 0.10 |
+
+
