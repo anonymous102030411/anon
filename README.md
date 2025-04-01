@@ -39,7 +39,7 @@
 #### ✓: group info is required for hyperparameter tuning  
 #### ✓✓: validation data is required for training and hyperparameter tuning  
 
-| Algorithm         | Group Info (Train / Val) | WATERBIRDS   | CELEBA       | CIVILCOMMENTS | MULTINLI    | METASHIFT   | CHEXPERT    |
+| Algorithm         | Group Info<br />(Train / Val) | WATERBIRDS   | CELEBA       | CIVILCOMMENTS | MULTINLI    | METASHIFT   | CHEXPERT    |
 |------------------|------------------------|--------------|-------------|--------------|------------|------------|------------|
 | ERM             | ✗/✗                      | 69.1±4.7      | 57.6±0.8    | 63.2±1.2     | 66.4±2.3   | 82.1±0.8   | 41.7±3.4   |
 | CRT             | ✗/✓                      | 76.3±0.8      | 70.4±0.4    | 68.5±0.0     | 65.4±0.1   | 83.1±0.0   | 74.0±0.2   |
@@ -49,7 +49,7 @@
 
 ### Table 3b - Model Worst Group Accuracy Performance (with attribute annotation):
 
-| Algorithm         | Group Info (Train / Val) | WATERBIRDS   | CELEBA       | CIVILCOMMENTS | MULTINLI    | METASHIFT   | CHEXPERT    |
+| Algorithm         | Group Info<br />(Train / Val) | WATERBIRDS   | CELEBA       | CIVILCOMMENTS | MULTINLI    | METASHIFT   | CHEXPERT    |
 |------------------|------------------------|--------------|-------------|--------------|------------|------------|------------|
 | ERM*            | ✗/✗                      | 77.9±3.0      | 66.5±2.6    | 69.4±1.2     | 66.5±0.7   | 80.0±0.0   | 75.6±0.4   |
 | Group DRO       | ✓/✓                      | 91.4±1.1      | 88.9±2.3    | 70.0±2.0     | 77.7±1.4   | -          | -          |
@@ -64,7 +64,7 @@
 
 ### Table 4 - Additional BREEDS Datasets Worst Group Accuracy Results (Source Domain)
 
-| Algorithm   | ImageNet <br /> Pre-training | Living-17  WGA | Living-17  Mean Accuracy | Non-living-26  WGA | Non-living-26  Mean Accuracy | Entity-30  WGA | Entity-30  Mean Accuracy |
+| Algorithm   | ImageNet<br />Pre-training | Living-17<br />WGA | Living-17<br />Mean Accuracy | Non-living-26<br />WGA | Non-living-26<br />Mean Accuracy | Entity-30<br />WGA | Entity-30<br />Mean Accuracy |
 |------------|----------------------|--------------|--------------------|----------------|--------------------|--------------|--------------------|
 | ERM        | ✓                    | -            | -                  | 87.7±0.8       | 95.8±0.1           | 84.3±0.1     | 96.1±0.0           |
 | ERM + DPE  | ✓                    | -            | -                  | 89.0±1.0       | 95.5±0.2           | 86.4±0.3     | 96.0±0.0           |
