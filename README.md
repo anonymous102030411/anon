@@ -1,4 +1,4 @@
-### Table 1: Time and Memory Benchmarking on 1 RTX6000 with k=1000 classes and a ResNet50 backbone.
+### Table 1: Time and Memory Benchmarking on 1 RTX6000 with k=1000 classes and a ResNet50 backbone for a batch size of 1
 
 | Model Head        | # Prototypes | Time per Batch (s) | GPU Memory (GB) |
 |-------------------|-------------|--------------------|----------------|
