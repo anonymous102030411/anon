@@ -124,18 +124,18 @@
 
 ---
 
-### Table 9 - Sensitivity Analysis to the IPS Loss Coefficient - Worst Group Accuracy
+### Table 9 - Sensitivity Analysis to the IPS Loss Coefficient (α) - Worst Group Accuracy
 
-| Dataset    | IPS Loss Coefficient | 1e4   | 5e4   | 1e5   | 5e5   | Mean  | STD  |
+| Dataset    | IPS Loss Coefficient | α=1e4   | α=5e4   | α=1e5   | α=5e5   | Mean  | STD  |
 |------------|----------------------|-------|-------|-------|-------|-------|------|
 | Waterbirds |                      | 93.6  | 94.4  | 94.1  | 94.1  | 94.05 | 0.33 |
 | MetaShift  |                      | 90.5  | 91.7  | 90.7  | 90.8  | 90.93 | 0.53 |
 | Living17   |                      | 63.0  | 61.7  | 61.7  | 62.0  | 62.10 | 0.62 |
 
 
-### Table 10 - Sensitivity Analysis to the IPS Loss Coefficient - Overall Accuracy 
+### Table 10 - Sensitivity Analysis to the IPS Loss Coefficient (α) - Overall Accuracy 
 
-| Dataset    | IPS Loss Coefficient | 1e4   | 5e4   | 1e5   | 5e5   | Mean  | STD  |
+| Dataset    | IPS Loss Coefficient | α=1e4   | α=5e4   | α=1e5   | α=5e5   | Mean  | STD  |
 |------------|----------------------|-------|-------|-------|-------|-------|------|
 | Waterbirds |                      | 96.3  | 95.9  | 96.0  | 95.9  | 96.03 | 0.19 |
 | MetaShift  |                      | 93.9  | 93.9  | 93.7  | 93.7  | 93.80 | 0.12 |
