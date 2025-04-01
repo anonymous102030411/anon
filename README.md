@@ -8,9 +8,9 @@
 | DPE              | 100         | 0.0045            | 0.8517         |
 | Linear (Baseline) | N/A         | 0.0032            | 0.104          |
 
-## Model Worst Group Accuracy Performance
+## 
 
-### Table 2 (no attribute annotation):
+### Table 2a - Model Worst Group Accuracy Performance (no attribute annotation):
 
 Part 1
 | Algorithm       | WATERBIRDS   | CELEBA       | CIVILCOMMENTS | MULTINLI    | METASHIFT   | CHEXPERT    | IMAGENETBG  | NICO++      | LIVING17    |
@@ -23,7 +23,7 @@ Part 1
 
 ---
 
-Part 2
+### Table 2b - Model Worst Group Accuracy Performance (no attribute annotation):
 
 | Algorithm       | WATERBIRDS   | CELEBA       | CIVILCOMMENTS | MULTINLI    | METASHIFT   | CHEXPERT    | IMAGENETBG  | NICO++      | LIVING17    |
 |---------------|--------------|-------------|--------------|------------|------------|------------|------------|------------|------------|
@@ -34,13 +34,11 @@ Part 2
 
 ---
 
-### Table 3 (attribute annotation):
+### Table 3a - Model Worst Group Accuracy Performance (no attribute annotation):
 
 #### ✗: no group info is required  
 #### ✓: group info is required for hyperparameter tuning  
 #### ✓✓: validation data is required for training and hyperparameter tuning  
-
-Part 1
 
 | Algorithm         | Group Info (Train / Val) | WATERBIRDS   | CELEBA       | CIVILCOMMENTS | MULTINLI    | METASHIFT   | CHEXPERT    |
 |------------------|------------------------|--------------|-------------|--------------|------------|------------|------------|
@@ -50,7 +48,7 @@ Part 1
 | DFR             | ✗/✓✓                     | 89.0±0.2      | 86.3±0.3    | 66.5±0.2     | 63.8±0.0   | 81.5±0.0   | 75.4±0.6   |
 | ERM + DPE (ours)| ✗/✓✓                     | 91.0±0.4      | 87.7±0.6    | 71.5±0.6     | 74.8±0.3   | 87.9±0.7   | -          |
 
-Part 2 
+### Table 3b - Model Worst Group Accuracy Performance (no attribute annotation):
 
 | Algorithm         | Group Info (Train / Val) | WATERBIRDS   | CELEBA       | CIVILCOMMENTS | MULTINLI    | METASHIFT   | CHEXPERT    |
 |------------------|------------------------|--------------|-------------|--------------|------------|------------|------------|
@@ -65,9 +63,7 @@ Part 2
 | GAP (All Layer) | ✗/✓✓                     | 93.8±0.1      | 90.2±0.3    | -            | 77.8±0.6   | -          | -          |
 | ERM* + DPE (ours) | ✗/✓✓                   | 94.1±0.4      | 90.3±0.7    | 70.8±0.8     | 75.3±0.5   | 91.7±1.3   | 76.0±0.3   |
 
-## Results on Additional BREEDS Datasets
-
-### Table 4 - Results on the Source Domain
+### Table 4 - Additional BREEDS Datasets Worst Group Accuracy Results (Source Domain)
 
 | Algorithm   | ImageNet Pre-training | Living-17 WGA | Living-17 Mean Accuracy | Non-living-26 WGA | Non-living-26 Mean Accuracy | Entity-30 WGA | Entity-30 Mean Accuracy |
 |------------|----------------------|--------------|--------------------|----------------|--------------------|--------------|--------------------|
@@ -76,7 +72,7 @@ Part 2
 
 ---
 
-### Table 5 - Results on the Target Domain
+### Table 5 - Additional BREEDS Datasets Worst Group Accuracy Results (Target Domain)
 
 | Algorithm   | ImageNet Pre-training | Living-17 WGA | Living-17 Mean Accuracy | Non-living-26 WGA | Non-living-26 Mean Accuracy | Entity-30 WGA | Entity-30 Mean Accuracy |
 |------------|----------------------|--------------|--------------------|----------------|--------------------|--------------|--------------------|
@@ -85,8 +81,6 @@ Part 2
 | ERM        | ✓                    | 48.0±1.5     | 87.4±0.5           | 1.7±0.0        | 62.0±0.4           | 19.2±2.0     | 68.7±0.5           |
 | ERM + DPE  | ✓                    | 54.0±4.0     | 87.4±0.3           | 7.7±0.0        | 61.5±0.4           | 28.8±1.5     | 70.1±0.3           |
 
-## Standard Accuracy Results
-
 ### Table 6 - Standard Accuracy for All Methods
 
 ### Group Info Legend:
@@ -94,8 +88,6 @@ Part 2
 - **✗/✓**: Group information required for hyperparameter tuning
 - **✗/✓✓**: Validation data required for training and hyperparameter tuning
 - **✓/✓**: Full group information required
-
-### Performance Results
 
 | Algorithm        | Group Info (Train / Val) | WATERBIRDS  | CELEBA      | CIVILCOMMENTS | MULTINLI    | METASHIFT   | CHEXPERT    |
 |-----------------|------------------------|-------------|------------|--------------|------------|------------|------------|
@@ -115,11 +107,7 @@ Part 2
 | GAP (All Layer)  | ✗/✓✓                   | 95.6±0.1    | 91.5±0.1   | -            | 82.5±0.1   | -          | -          |
 | ERM* + DPE     | ✗/✓✓                     | 96.0±0.1    | 91.9±0.3   | 81.6±0.2     | 81.6±0.2   | 93.8±0.5   | 79.0±0.2   |
 
-## Hyperparameter Tuning and Sensitivity
-
-### Sensitivity Analysis to the Entropic Scale (i.e, inverse temperature, 1/τ)
-
-### Table 7 - Worst Group Accuracy
+### Table 7 - Sensitivity Analysis to the Entropic Scale (i.e, inverse temperature, 1/τ) - Worst Group Accuracy 
 
 | Dataset    | Inverse Temperature (1/τ) | 10    | 20    | 30    | 40    | Mean  | STD  |
 |------------|--------------------------|-------|-------|-------|-------|-------|------|
@@ -127,7 +115,7 @@ Part 2
 | MetaShift  |                           | 89.7  | 91.7  | 90.8  | 91.3  | 90.88 | 0.87 |
 | Living17   |                           | 63.0  | 58.7  | 57.3  | 55.3  | 58.58 | 3.26 |
 
-### Table 8 - Accuracy
+### Table 8 - Sensitivity Analysis to the Entropic Scale (i.e, inverse temperature, 1/τ) - Overall Accuracy 
 
 | Dataset    | Inverse Temperature (1/τ) | 10    | 20    | 30    | 40    | Mean  | STD  |
 |------------|--------------------------|-------|-------|-------|-------|-------|------|
@@ -137,9 +125,7 @@ Part 2
 
 ---
 
-### Sensitivity Analysis to the IPS Loss Coefficient
-
-### Table 9 - Worst Group Accuracy
+### Table 9 - Sensitivity Analysis to the IPS Loss Coefficient - Worst Group Accuracy 
 
 | Dataset    | IPS Loss Coefficient | 1e4   | 5e4   | 1e5   | 5e5   | Mean  | STD  |
 |------------|----------------------|-------|-------|-------|-------|-------|------|
@@ -147,7 +133,7 @@ Part 2
 | MetaShift  |                      | 90.5  | 91.7  | 90.7  | 90.8  | 90.93 | 0.53 |
 | Living17   |                      | 63.0  | 61.7  | 61.7  | 62.0  | 62.10 | 0.62 |
 
-### Table 10 - Accuracy
+### Table 10 - Sensitivity Analysis to the IPS Loss Coefficient - Overall Accuracy 
 
 | Dataset    | IPS Loss Coefficient | 1e4   | 5e4   | 1e5   | 5e5   | Mean  | STD  |
 |------------|----------------------|-------|-------|-------|-------|-------|------|
