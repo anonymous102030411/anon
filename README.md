@@ -144,3 +144,5 @@
 | Living17   | 87.2  | 87.0  | 87.0  | 87.1  | 87.08 | 0.10 |                      
 
 
+![My Image](images/landbird_prototypes_with_chatgpt_descriptions.jpg)
+![My Image](images/waterbird_prototypes_with_chatgpt_descriptions.jpg)
