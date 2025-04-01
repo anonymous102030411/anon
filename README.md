@@ -144,9 +144,9 @@
 | Living17   | 87.2  | 87.0  | 87.0  | 87.1  | 87.08 | 0.10 |                      
 
 
-#### Figure 1: Landbird Prototypes. Each row shows the top-10 validation samples closest to one of the prototypes from our Diversified Prototypical Ensemble (DPE) model on the Landbirds class of the Waterbirds dataset. ChatGPT was used to analyze each prototype’s semantic structure. The results reveal that learned prototypes align with coherent visual or ecological subpopulations—e.g., small yellow songbirds across diverse backgrounds, upright-postured forest-edge dwellers, forest birds appearing in beach or human-present scenes (highlighting spurious correlations), and muted-tone songbirds in leafy, texture-poor vegetation.
-![My Image](images/landbird_prototypes_with_chatgpt_descriptions.jpg)
-
-
-#### Figure 2: Waterbird Prototypes. Each row depicts the top-10 validation samples closest to one of the prototypes learned for the Waterbirds class. Using ChatGPT for cluster interpretation, we observe that the prototypes induce structured prototype-subgroup alignment that meaningfully reflects bird morphology, pose, and context: divers and floaters in aquatic settings, large-bodied birds in dynamic flight poses, compact-bodied seabirds shown in terrestrial or bamboo-heavy scenes (an ecologically-confounded but visually coherent mode), and upright-standing gulls with consistent visual separation.
+#### Figure 1: Waterbird Prototypes. Each row depicts the top-10 validation samples closest to one of the prototypes learned for the Waterbirds class. Using ChatGPT for cluster interpretation, we observe that the prototypes induce structured prototype-subgroup alignment that meaningfully reflects bird morphology, pose, and context: divers and floaters in aquatic settings, large-bodied birds in dynamic flight poses, compact-bodied seabirds shown in terrestrial or bamboo-heavy scenes (an ecologically-confounded but visually coherent mode), and upright-standing gulls with consistent visual separation.
 ![My Image](images/waterbird_prototypes_with_chatgpt_descriptions.jpg)
+
+
+#### Figure 2: Landbird Prototypes. Each row shows the top-10 validation samples closest to one of the prototypes from our Diversified Prototypical Ensemble (DPE) model on the Landbirds class of the Waterbirds dataset. ChatGPT was used to analyze each prototype’s semantic structure. The results reveal that learned prototypes align with coherent visual or ecological subpopulations—e.g., small yellow songbirds across diverse backgrounds, upright-postured forest-edge dwellers, forest birds appearing in beach or human-present scenes (highlighting spurious correlations), and muted-tone songbirds in leafy, texture-poor vegetation.
+![My Image](images/landbird_prototypes_with_chatgpt_descriptions.jpg)
