@@ -73,7 +73,7 @@
 
 ### Table 5 - Additional BREEDS Datasets Worst Group Accuracy Results (Target Domain)
 
-| Algorithm   | ImageNet Pre-training | Living-17 WGA | Living-17 Mean Accuracy | Non-living-26 WGA | Non-living-26 Mean Accuracy | Entity-30 WGA | Entity-30 Mean Accuracy |
+| Algorithm   | ImageNet<br />Pre-training | Living-17<br />WGA | Living-17<br />Mean Accuracy | Non-living-26<br />WGA | Non-living-26<br />Mean Accuracy | Entity-30<br />WGA | Entity-30<br />Mean Accuracy |
 |------------|----------------------|--------------|--------------------|----------------|--------------------|--------------|--------------------|
 | ERM        | ✗                    | 6.7±1.5      | 27.8±0.6           | 5.0±1.0        | 23.9±0.6           | 5.8±1.5      | 24.8±1.0           |
 | ERM + DPE  | ✗                    | 9.0±1.0      | 30.2±1.5           | 8.0±1.0        | 24.7±0.6           | 8.8±0.2      | 29.6±0.0           |
@@ -88,7 +88,7 @@
 - **✗/✓✓**: Validation data required for training and hyperparameter tuning
 - **✓/✓**: Full group information required
 
-| Algorithm        | Group Info (Train / Val) | WATERBIRDS  | CELEBA      | CIVILCOMMENTS | MULTINLI    | METASHIFT   | CHEXPERT    |
+| Algorithm        | Group Info<br />(Train / Val) | WATERBIRDS  | CELEBA      | CIVILCOMMENTS | MULTINLI    | METASHIFT   | CHEXPERT    |
 |-----------------|------------------------|-------------|------------|--------------|------------|------------|------------|
 | ERM            | ✗/✗                      | 84.1±1.7    | 95.0±0.1   | 85.4±0.2     | 80.9±0.3   | 91.5±0.2   | 88.6±0.7   |
 | CRT            | ✗/✓                      | 89.2±0.1    | 94.1±0.1   | 83.0±0.0     | 80.2±0.0   | 91.5±0.0   | 79.1±0.1   |
