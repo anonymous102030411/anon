@@ -8,7 +8,7 @@
 | DPE              | 100         | 0.0045            | 0.8517         |
 | Linear (Baseline) | N/A         | 0.0032            | 0.104          |
 
-## 
+---
 
 ### Table 2a - Model Worst Group Accuracy Performance (no attribute annotation):
 
@@ -19,8 +19,6 @@
 | ReWeightCRT  | 76.3±0.2      | 70.7±0.6    | 64.7±0.2     | 65.2±0.2   | 85.1±0.4   | 75.1±0.2   | 77.5±0.7   | 33.3±0.0   | -          | 
 | DFR          | 89.0±0.2      | 73.7±0.8    | 64.4±0.1     | 63.8±0.0   | 81.4±0.1   | 75.8±0.3   | 74.4±1.8   | 38.0±3.8   | -          | 
 | ERM + DPE    | 91.0±0.5      | 81.9±0.2    | 69.9±0.9     | 69.3±0.8   | 84.1±1.5   | -          | 87.9±0.6   | 50.0±0.0   | 54.0±4.0   | 
-
----
 
 ### Table 2b - Model Worst Group Accuracy Performance (no attribute annotation):
 
@@ -62,14 +60,14 @@
 | GAP (All Layer) | ✗/✓✓                     | 93.8±0.1      | 90.2±0.3    | -            | 77.8±0.6   | -          | -          |
 | ERM* + DPE (ours) | ✗/✓✓                   | 94.1±0.4      | 90.3±0.7    | 70.8±0.8     | 75.3±0.5   | 91.7±1.3   | 76.0±0.3   |
 
+---
+
 ### Table 4 - Additional BREEDS Datasets Worst Group Accuracy Results (Source Domain)
 
 | Algorithm   | ImageNet<br />Pre-training | Living-17<br />WGA | Living-17<br />Mean Accuracy | Non-living-26<br />WGA | Non-living-26<br />Mean Accuracy | Entity-30<br />WGA | Entity-30<br />Mean Accuracy |
 |------------|----------------------|--------------|--------------------|----------------|--------------------|--------------|--------------------|
 | ERM        | ✓                    | -            | -                  | 87.7±0.8       | 95.8±0.1           | 84.3±0.1     | 96.1±0.0           |
 | ERM + DPE  | ✓                    | -            | -                  | 89.0±1.0       | 95.5±0.2           | 86.4±0.3     | 96.0±0.0           |
-
----
 
 ### Table 5 - Additional BREEDS Datasets Worst Group Accuracy Results (Target Domain)
 
@@ -79,6 +77,8 @@
 | ERM + DPE  | ✗                    | 9.0±1.0      | 30.2±1.5           | 8.0±1.0        | 24.7±0.6           | 8.8±0.2      | 29.6±0.0           |
 | ERM        | ✓                    | 48.0±1.5     | 87.4±0.5           | 1.7±0.0        | 62.0±0.4           | 19.2±2.0     | 68.7±0.5           |
 | ERM + DPE  | ✓                    | 54.0±4.0     | 87.4±0.3           | 7.7±0.0        | 61.5±0.4           | 28.8±1.5     | 70.1±0.3           |
+
+---
 
 ### Table 6 - Standard Accuracy for All Methods
 
@@ -106,6 +106,8 @@
 | GAP (All Layer)  | ✗/✓✓                   | 95.6±0.1    | 91.5±0.1   | -            | 82.5±0.1   | -          | -          |
 | ERM* + DPE     | ✗/✓✓                     | 96.0±0.1    | 91.9±0.3   | 81.6±0.2     | 81.6±0.2   | 93.8±0.5   | 79.0±0.2   |
 
+---
+
 ### Table 7 - Sensitivity Analysis to the Entropic Scale (i.e, inverse temperature, 1/τ) - Worst Group Accuracy 
 
 | Dataset    | 1/τ=10    | 1/τ=20    | 1/τ=30    | 1/τ=40    | Mean  | STD  |
@@ -122,7 +124,7 @@
 | MetaShift  | 93.8  | 93.7  | 93.9  | 93.9  | 93.83 | 0.10 |                           
 | Living17   | 87.0  | 87.2  | 87.1  | 86.9  | 87.05 | 0.13 |                           
 
----
+##
 
 ### Table 9 - Sensitivity Analysis to the IPS Loss Coefficient (α) - Worst Group Accuracy
 
