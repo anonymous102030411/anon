@@ -12,7 +12,6 @@
 
 ### Table 2a - Model Worst Group Accuracy Performance (no attribute annotation):
 
-Part 1
 | Algorithm       | WATERBIRDS   | CELEBA       | CIVILCOMMENTS | MULTINLI    | METASHIFT   | CHEXPERT    | IMAGENETBG  | NICO++      | LIVING17    |
 |---------------|--------------|-------------|--------------|------------|------------|------------|------------|------------|------------|
 | ERM          | 69.1±4.7      | 57.6±0.8    | 63.2±1.2     | 66.4±2.3   | 82.1±0.8   | 41.7±3.4   | 76.8±0.9   | 35.0±4.1   | 48.0±1.5   |
