@@ -64,7 +64,7 @@
 
 ### Table 4 - Additional BREEDS Datasets Worst Group Accuracy Results (Source Domain)
 
-| Algorithm   | ImageNet Pre-training | Living-17 \\ WGA | Living-17 Mean Accuracy | Non-living-26 WGA | Non-living-26 Mean Accuracy | Entity-30 WGA | Entity-30 Mean Accuracy |
+| Algorithm   | ImageNet Pre-training | Living-17 \ WGA | Living-17 Mean Accuracy | Non-living-26 WGA | Non-living-26 Mean Accuracy | Entity-30 WGA | Entity-30 Mean Accuracy |
 |------------|----------------------|--------------|--------------------|----------------|--------------------|--------------|--------------------|
 | ERM        | ✓                    | -            | -                  | 87.7±0.8       | 95.8±0.1           | 84.3±0.1     | 96.1±0.0           |
 | ERM + DPE  | ✓                    | -            | -                  | 89.0±1.0       | 95.5±0.2           | 86.4±0.3     | 96.0±0.0           |
